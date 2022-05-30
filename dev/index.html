@@ -6,7 +6,8 @@
     <title>&lt;my-element> Demo</title>
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../dist/my-element.js"></script>
+    <script type="module" src="../dist/dynamic-content.js"></script>
+    <script type="module" src="https://unpkg.com/@finastra/app-card@latest/dist/src/app-card.js?module"></script>
     <style>
       p {
         border: solid 1px blue;
@@ -15,8 +16,8 @@
     </style>
   </head>
   <body>
-    <my-element>
+    <fds-dynamic-content displayContent="anc">
       <p>This is child content</p>
-    </my-element>
+    </fds-dynamic-content>
   </body>
 </html>

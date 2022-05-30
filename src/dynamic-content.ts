@@ -34,8 +34,11 @@ export class DynamicContent extends LitElement {
   }
 
   renderContent() {
-    return;
+    return html`<fds-app-card application='{"name":"Business Economics", "author":"Finastra", "flag":"COMING_SOON", "icon":"https://www.finastra.com/themes/custom/themekit/dist/logo.svg", "description":"Application Description goes here. This can vary in length from short to pretty long, so you’ll want to watch that."}'>
+  </fds-app-card>`;
   }
 
-  loadContent() {}
+  loadContent() {
+    // const content = ???
+  }
 }
